@@ -1,0 +1,36 @@
+#list-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid #e6e6e6;
+  width: 550px;
+}
+
+#todo-tab {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  height: 58px;
+
+  font-size: 24px;
+  color: #4d4d4d;
+  font-weight: 300;
+
+  border-bottom: 1px solid #ededed;
+}
+#todo-tab > div:nth-child(1) {
+  flex: 1 0 10%;
+  text-align: center;
+}
+#todo-tab > div:nth-child(2) {
+  flex: 9 0 80%;
+}
+#todo-tab > div:nth-child(3) {
+  flex: 1 0 10%;
+  text-align: center;
+  color: #cc9a9a;
+}
+#todo-tab > div:nth-child(3):hover {
+  cursor: pointer;
+}

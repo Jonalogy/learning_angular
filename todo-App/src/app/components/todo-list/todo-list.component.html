@@ -1,0 +1,9 @@
+<div>
+  <section id="list-container">
+    <div id="todo-tab" *ngFor="let EachTodo of allTodoData; let idx = index">
+      <div>{{idx}}</div>
+      <div>{{EachTodo.task}}</div>
+      <div (click)="onDeleteHandler(idx)">X</div>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,7 @@
+<section id="add-todo">
+  <form id="add-todo-form">
+    <div>&#9663;</div>
+    <input #taskInput type="text" placeholder="New todo..." />
+    <button type="submit" (click)="onAddHandler(taskInput.value)">Add</button>
+  </form>
+</section>

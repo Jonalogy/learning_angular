@@ -1,0 +1,60 @@
+#add-todo {
+  width: 550px;
+}
+
+#add-todo-form {
+  display: flex;
+  flex-direction: row;
+
+  font-size: 24px;
+  font-weight: 300;
+}
+
+#add-todo-form > div {
+  flex: 1 0 10%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+  cursor: pointer;
+
+  font-size: 20px;
+  color: #4d4d4d;
+}
+
+#add-todo-form > input {
+  flex: 8 0 80%;
+  height: 58px;
+  width: 90%;
+
+  border: 0;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+#add-todo-form > input:focus {
+  outline: none;
+  color: #4d4d4d;
+}
+
+#add-todo-form > button {
+  flex: 1 0 10%;
+  background-color: white;
+  border: 0;
+
+  font-size: 15px;
+  color: #cc9a9a;
+
+  cursor: pointer;
+}
+
+#add-todo-form > button:hover {
+  text-shadow: 2px 2px 1px #dbdde0;
+}
+
+#add-todo-form > button:focus {
+  outline: none;
+}
