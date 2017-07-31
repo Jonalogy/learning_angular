@@ -12,7 +12,7 @@ import { HeroService } from './services/hero.service';
 export class AppComponent implements OnInit {
   title = 'Tour of Heroes';
   hero: Hero = { id: 1, name: 'Windstorm' };
-  heroes = HEROES;
+  heroes: Hero[];
   selectedHero: Hero;
 
   constructor(private heroService: HeroService) {}
