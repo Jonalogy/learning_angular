@@ -1,9 +1,16 @@
 <div>
   <section id="list-container">
-    <div id="todo-tab" *ngFor="let EachTodo of allTodoData; let idx = index">
-      <div>{{idx}}</div>
-      <div>{{EachTodo.task}}</div>
-      <div (click)="onDeleteHandler(idx)">X</div>
+    <div *ngFor="let EachTodo of allTodoData; let idx = index">
+      <div id="todo-tab" *ngIf="!EachTodo.edit">
+        <div>{{idx}}</div>
+        <div>{{EachTodo.task}}</div>
+        <div (click)="onEditHandler(idx)">
+          <img src="../../../assets/images/edit.png" alt="Edit todo task">
+        </div>
+        <div (click)="onDeleteHandler(idx)">X</div>
+
+      </div>
+      <edit-todo *ngIf="EachTodo.edit" [idxToEdit]="idx"></edit-todo>
     </div>
   </section>
 </div>

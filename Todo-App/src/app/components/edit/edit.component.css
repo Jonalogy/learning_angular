@@ -1,0 +1,40 @@
+#edit-tab {
+  height: 58px;
+  display: flex;
+
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  /* box-shadow: 0 0 3px #d7dae0; */
+  outline: 3px solid #d7dae0;
+}
+
+#edit-tab > div:nth-child(1) {
+  flex: 9 0 90%;
+  height: inherit;
+}
+#edit-tab > div:nth-child(1) > input {
+  height: inherit;
+  width: 100%;
+  border: 0;
+  text-indent: 1em;
+  font-size: 24px;
+  font-weight: 300;
+}
+#edit-tab > div:nth-child(1) > input:focus {
+  outline: none;
+}
+
+#edit-tab > div:nth-child(2) {
+  flex: 1 0 10%;
+  height: calc(inherit - 4px);
+  width: 100%;
+  border: 0;
+  background-color: white;
+
+  font-size: 15px;
+  color: #cc9a9a;
+
+  cursor: pointer;
+}

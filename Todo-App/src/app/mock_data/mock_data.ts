@@ -1,19 +1,24 @@
-import { i_Todo } from '../models/models';
+import { ITodo } from '../models/models';
 
-export let MockTodoListData: i_Todo[] = [
+export let MockTodoListData: ITodo[] = [
   {
-    id: 0,
     active: true,
+    edit: false,
     task: 'Make coffee'
   },
   {
-    id: 1,
     active: true,
+    edit: false,
     task: 'Walk the dog'
   },
   {
-    id: 2,
     active: true,
+    edit: false,
     task: 'Pick up groceries'
+  },
+  {
+    active: true,
+    edit: false,
+    task: 'Paint the skies'
   }
 ];

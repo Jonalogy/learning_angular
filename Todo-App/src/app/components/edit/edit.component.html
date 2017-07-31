@@ -1,0 +1,11 @@
+<div id="edit-tab">
+  <div>
+    <input #EditForm type="text" [value]="getTargetTodoValue(idxToEdit)" />
+  </div>
+  <div (click)="onConfirmEditHandler(idxToEdit, EditForm.value)">
+    OK
+  </div>
+</div>
+
+
+<!-- Continue building the edit tab -->
