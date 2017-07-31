@@ -7,6 +7,7 @@ export interface ITodo {
 export interface ITodoService {
   getTodoData(): ITodo[];
   addTodoData(newTodoData: string): void;
-  editTodoData(idx: number): void;
+  toggleEditTodoData(idx: number): void;
   getEditTodoValue(idx: number): string;
+  changeTodoValue(idxToEdit: number, editedTask: string): void;
 }
