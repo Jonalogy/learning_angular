@@ -1,0 +1,34 @@
+<div>
+  <h1>Hero Form</h1>
+
+  <form #heroForm="ngForm">
+
+    <div>
+      <label for="name">Name</label>
+      <input type="text" id="name" required [(ngModel)]="A_Hero.name" name="name" />
+      <span>#debug = {{A_Hero.name}}</span>
+    </div>
+
+    <div>
+      <label for="alterEgo">Alter Ego</label>
+      <input type="text" id="alterEgo" [(ngModel)]="A_Hero.alterEgo" name="alterEgo" >
+      <span>#debug = {{A_Hero.alterEgo}}</span>
+    </div>
+
+    <div>
+      <label for="power">Hero Power</label>
+      <select id="power" required [(ngModel)]="A_Hero.power" name="power">
+        <option *ngFor="let EachPowers of Powers" [value]="EachPowers">{{EachPowers}}</option>
+      </select>
+      <span>#debug = {{A_Hero.power}}</span>
+    </div>
+
+    <button type="submit">Submit</button>
+
+  </form>
+
+  <br>
+  <br>
+  {{diagnostic}}
+
+</div>
