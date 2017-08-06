@@ -3,10 +3,10 @@ import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'hero-detail',
-  templateUrl: './hero-detail.component.html',
-  styleUrls: ['./hero-detail.component.css']
+  templateUrl: './hero-detail2.component.html',
+  styleUrls: ['./hero-detail2.component.css']
 })
-export class HeroDetailComponent {
+export class HeroDetail2Component {
   heroForm = new FormGroup({
     name: new FormControl(),
     age: new FormControl()
