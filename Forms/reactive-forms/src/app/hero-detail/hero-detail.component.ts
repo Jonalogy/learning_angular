@@ -8,6 +8,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class HeroDetailComponent {
   heroForm = new FormGroup({
-    name: new FormControl()
+    name: new FormControl(),
+    age: new FormControl()
   });
 }
