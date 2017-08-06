@@ -5,14 +5,18 @@
 
     <div>
       <label for="name">Name</label>
-      <input type="text" id="name" required [(ngModel)]="A_Hero.name" name="name" />
-      <span>#debug = {{A_Hero.name}}</span>
+      <input type="text"
+             id="name"
+             required
+             [(ngModel)]="A_Hero.name"
+             name="name"
+      />
+
     </div>
 
     <div>
       <label for="alterEgo">Alter Ego</label>
       <input type="text" id="alterEgo" [(ngModel)]="A_Hero.alterEgo" name="alterEgo" >
-      <span>#debug = {{A_Hero.alterEgo}}</span>
     </div>
 
     <div>
@@ -20,7 +24,6 @@
       <select id="power" required [(ngModel)]="A_Hero.power" name="power">
         <option *ngFor="let EachPowers of Powers" [value]="EachPowers">{{EachPowers}}</option>
       </select>
-      <span>#debug = {{A_Hero.power}}</span>
     </div>
 
     <button type="submit">Submit</button>
@@ -29,6 +32,8 @@
 
   <br>
   <br>
-  {{diagnostic}}
+  <p>#debug = {{A_Hero.name}}</p>
+  <p>#debug = {{A_Hero.alterEgo}}</p>
+  <p>#debug = {{A_Hero.power}}</p>
 
 </div>
