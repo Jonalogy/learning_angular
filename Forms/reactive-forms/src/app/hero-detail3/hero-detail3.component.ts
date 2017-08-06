@@ -1,15 +1,32 @@
-import { Component, OnInit } from '@angular/core';
+import {Component} from '@angular/core';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+
+import {states} from '../data-model';
 
 @Component({
-  selector: 'app-hero-detail3',
+  selector: 'hero-detail-3',
   templateUrl: './hero-detail3.component.html',
   styleUrls: ['./hero-detail3.component.css']
 })
-export class HeroDetail3Component implements OnInit {
+export class HeroDetail3Component {
+  heroForm: FormGroup;
+  AllStates = states;
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(private fb: FormBuilder) {
+    this.createForm();
   }
 
+  private createForm() {
+    this.heroForm = this.fb.group({
+      name: ['', Validators.required], // Creates a FormControl called `name`
+      power: '',
+      sidekick: '',
+      address: this.fb.group({
+        street: '',
+        city: '',
+        state: '',
+        zip: ''
+      })
+    });
+  }
 }

@@ -1,15 +1,17 @@
-<h3><i>Form Control In A Form Group</i></h3>
-<form [formGroup]="heroForm" novalidate>
-  <div class="form-group">
-    <label class="center-block">
-      <input class="form-control" formControlName="name" placeholder="{{'Hero\'s name'}}" />
-    </label>
-  </div>
-  <div class="form-group">
-    <label class="center-block">
-      <input class="form-control" formControlName="age" placeholder="{{'Hero\'s Age'}}" />
-    </label>
-  </div>
-  <p>Form Value: {{heroForm.value | json}} </p>
-  <p>Form Status: {{heroForm.status | json}} </p>
-</form>
+<div>
+  <h3><i>A FormGroup with 2xFormControls</i></h3>
+  <form [formGroup]="heroForm" novalidate>
+    <div class="form-group">
+      <label class="center-block">
+        <input class="form-control" formControlName="name" placeholder="{{'Hero\'s name'}}" />
+      </label>
+    </div>
+    <div class="form-group">
+      <label class="center-block">
+        <input class="form-control" formControlName="age" placeholder="{{'Hero\'s Age'}}" />
+      </label>
+    </div>
+    <p>Form Value: {{heroForm.value | json}} </p>
+    <p>Form Status: {{heroForm.status | json}} </p>
+  </form>
+</div>

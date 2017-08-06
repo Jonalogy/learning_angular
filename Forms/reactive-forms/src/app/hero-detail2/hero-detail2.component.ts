@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
-  selector: 'hero-detail',
+  selector: 'hero-detail-2',
   templateUrl: './hero-detail2.component.html',
   styleUrls: ['./hero-detail2.component.css']
 })
