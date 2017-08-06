@@ -2,12 +2,12 @@
 <form [formGroup]="heroForm" novalidate>
   <div class="form-group">
     <label class="center-block">
-      <input class="form-control" formControlName="name" />
+      <input class="form-control" formControlName="name" placeholder="{{'Hero\'s name'}}" />
     </label>
   </div>
   <div class="form-group">
     <label class="center-block">
-      <input class="form-control" formControlName="age" />
+      <input class="form-control" formControlName="age" placeholder="{{'Hero\'s Age'}}" />
     </label>
   </div>
   <p>Form Value: {{heroForm.value | json}} </p>
